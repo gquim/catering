@@ -1,0 +1,48 @@
+header{
+    display: grid;
+    grid-template-columns: 1ft auto;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #72b01d;
+    color: #fff;
+}
+.logo{
+    font-size: 30px;
+    text-align: center;
+
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline;
+    margin-right: 15px;
+}
+nav li a{
+    text-decoration: none;
+    color: #192c07;
+    font-size: 20px;
+}
+@media screen and (max-width: 601px) and (max-width: 1024px){
+    .logo{
+        font-size: 3.8vw;
+    }
+    nav li a{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .logo{
+        font-size: 3.8vw;
+    }
+    nav li a{
+        font-size: 4vw;
+    }
+    .container{
+        order: -1;
+    }
+}
